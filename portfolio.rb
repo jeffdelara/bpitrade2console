@@ -1,14 +1,14 @@
 class Portfolio
 	attr_accessor :stocks
-	@@total_total_cost = 0.0 
-	@@total_market_value = 0.0 
-	@@total_profit_loss = 0.0
-	@@unrealized_today = 0.0
-	@@unrealized_today_percent = 0.0
-	@@buying_power = 0.0
 
 	def initialize
 		@stocks = []
+		@@total_total_cost = 0.0 
+		@@total_market_value = 0.0 
+		@@total_profit_loss = 0.0
+		@@unrealized_today = 0.0
+		@@unrealized_today_percent = 0.0
+		@@buying_power = 0.0
 	end
 
 	def display

@@ -1,10 +1,12 @@
 # BPI Trade Console
 
-This program aims to solve the problem of logging in to your BPI Trade account and check your portfolio. Let's face it, BPI Trade is not that appealing to look at and its slow compare to a terminal. Why not just run a script that will fetch your portfolio for you for quick checking.
+![Screenshot](images/screen.png)
+
+This program aims to solve the problem of logging in to your BPI Trade account and check your portfolio. **Pain point:** BPI Trade's platform is ugly and slow. Wouldn't it be better if we can check our portfolio on the command line? 
 
 ## Usage
 
-First you will need to create a config.rb file. 
+First, you will need to create a `config.rb` file. 
 
 	# Config file for password
 	# Include in .gitignore
@@ -16,12 +18,21 @@ First you will need to create a config.rb file.
 		def get_password
 			"YOUR PASSWORD"
 		end
+
+		def quotes_api_call(stock)
+			"YOUR API ENDPOINT TO GET STOCK QUOTES"
+		end
 	end
 
 Save the `config.rb` file then run on console.
 
-`$ ruby bpi.rb` 
+`$ ruby bpi2console.rb` 
+
+## Issues
+
+It may not work if you have a different api endpoint.
 
 ## Future Features
 
-Would like to add quotes, buying and selling through the console.
+- Would like to add quotes *(DONE)*
+- buying and selling through the console.
